@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day of Pho</title>
+    <link rel="icon" href="Anh/logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="JavaScript.js"></script>
+  </head>
+  <style></style>
+  <body>
+    <!-- Thanh điều hướng -->
+    <div class="navigation">
+      <div class="logo">
+        <img src="Anh/logo.png" alt="Day of Pho Logo" />
+        <h2>Day of Pho</h2>
+      </div>
+      <div class="dieuhuong">
+        <div class="search">
+          <input type="text" placeholder="Search..." />
+          <img
+            src="Anh/search.png"
+            class="search-icon"
+            alt="Search Icon"
+          />
+        </div>
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="sign.html">Sign in/Sign up</a>
+      </div>
+    </div>
+
+    <!-- Ảnh nền giới thiệu -->
+    <div class="nen">
+      <p>
+        Dive into a steaming bowl of flavors and celebrate the magic of
+        Vietnam's beloved noodle soup.
+      </p>
+    </div>
+
+    <!-- Phần About Us -->
+    <div class="about" id="about">
+      <div class="title">Welcome to Day of Pho</div>
+      <div class="content">
+        <img src="Anh/hinh_quan.png" />
+        <div class="gioithieu">
+          <p>
+            Here, we celebrate the harmony of flavors and culture with every
+            bowl of Pho. Our naturally simmered bone broth, paired with fresh
+            ingredients, delivers an authentic taste of Vietnam, complemented by
+            warm hospitality.
+          </p>
+          <p>
+            Whether it's a busy day or a special occasion with loved ones, we
+            strive to provide a welcoming space where you can enjoy the perfect
+            balance of flavor, comfort, and connection.
+          </p>
+          <button class="detail">Detail</button>
+        </div>
+      </div>
+    </div>
+    <div class="about hours">
+      OPEN FROM 7:00 AM TO 6:00 PM<br />
+      MONDAY TO SATURDAY
+    </div>
+
+    <!-- menu -->
+    <div class="menu" id="menu">
+      <div class="content">
+        <div class="menu-lists">
+          <div class="menu-item">
+            <a href="#Traditional-Beef-Pho">Traditional Beef Pho</a>
+          </div>
+          <div class="menu-item">
+            <a href="#Special-Beef-Pho">Special Beef Pho</a>
+          </div>
+          <div class="menu-item">
+            <a href="#Extra-Order">Extra Order</a>
+          </div>
+        </div>
+
+        <!-- Detailed menu items -->
+        <div class="monan">
+          <h1 id="Traditional-Beef-Pho">Traditional Beef Pho</h1>
+          <div class="image-gallery">
+            <div class="dish-item">
+              <img src="Anh/pho_chin.png" alt=" " />
+              <div class="dish-info">
+                <p>Pho with brisket</p>
+                <p>Price: $1.38</p>
+                <button
+                  class="order-btn"
+                  onclick="openOrderPage('Pho with brisket', 1.38)"
+                >
+                  Buy now
+                </button>
+              </div>
+            </div>
+            <div class="dish-item">
+              <img src="Anh/pho_tai.png" alt=" " />
+              <div class="dish-info">
+                <p>Pho with medium-rare beef</p>
+                <p>Price: $1.38</p>
+                <button
+                  class="order-btn"
+                  onclick="openOrderPage('Pho with medium-rare beef', 1.38)"
+                >
+                  Buy now
+                </button>
+              </div>
+            </div>
+            <div class="dish-item">
+              <img src="Anh/pho_gan.png" alt=" " />
+              <div class="dish-info">
+                <p>Pho with tendon</p>
+                <p>Price: $1.38</p>
+                <button
+                  class="order-btn"
+                  onclick="openOrderPage('Pho with tendon', 1.38)"
+                >
+                  Buy now
+                </button>
+              </div>
+            </div>
+            <div class="dish-item">
+              <img src="Anh/pho_gau.png" alt=" " />
+              <div class="dish-info">
+                <p>Pho with fatty flank</p>
+                <p>Price: $1.38</p>
+                <button
+                  class="order-btn"
+                  onclick="openOrderPage('Pho with fatty flank', 1.38)"
+                >
+                  Buy now
+                </button>
+              </div>
+            </div>
+            <div class="dish-item">
+              <img src="Anh/pho_bap_bo.png" alt=" " />
+              <div class="dish-info">
+                <p>Pho with beef shank</p>
+                <p>Price: $2.16</p>
+                <button
+                  class="order-btn"
+                  onclick="openOrderPage('Pho with beef shank', 2.16)"
+                >
+                  Buy now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <h1 id="Special-Beef-Pho">Special Beef Pho</h1>
+          <div class="image-gallery">
+            <div class="dish-item">
+              <img src="Anh/pho_dac_biet.png" alt=" " />
+              <div class="dish-info">
+                <p>Special Bowl</p>
+                <p>(Rare Beef/Brisket/Tendon/Flank/Beef Meatballs)</p>
+                <p>Price: $2.16</p>
+                <button
+                  class="order-btn"
+                  onclick="openOrderPage('Special Bowl', 2.16)"
+                >
+                  Buy now
+                </button>
+              </div>
+            </div>
+            <div class="dish-item">
+              <img src="Anh/pho_kobe.png" alt=" " />
+              <div class="dish-info">
+                <p>Pho with KOBE beef</p>
+                <p>Price: $33.44</p>
+                <button
+                  class="order-btn"
+                  onclick="openOrderPage('Pho with KOBE beef', 33.44)"
+                >
+                  Buy now
+                </button>
+              </div>
+            </div>
+            </div>
+
+            <h1 id="Extra-Order">Extra Order</h1>
+            <div class="image-gallery">
+              <div class="dish-item">
+                <img src="Anh/meat.png" alt=" " />
+                <div class="dish-info">
+                  <p>Meat</p>
+                  <p>Price: $1.73</p>
+                  <button
+                    class="order-btn"
+                    onclick="openOrderPage('Meat', 1.73)"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+              <div class="dish-item">
+                <img src="Anh/pho.png" alt=" " />
+                <div class="dish-info">
+                  <p>Pho</p>
+                  <p>Price: $0.39</p>
+                  <button
+                    class="order-btn"
+                    onclick="openOrderPage('Pho', 0.39)"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+              <div class="dish-item">
+                <img src="Anh/cruller.png" alt="">
+                <div class="dish-info">
+                  <p>Cruller</p>
+                  <p>Price: $0.20</p>
+                  <button
+                    class="order-btn"
+                    onclick="openOrderPage('Cruller', 0.20)"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+              <div class="dish-item">
+                <img src="Anh/Shredded_cabbage.png" alt="">
+                <div class="dish-info">
+                  <p>Shredded cabbage</p>
+                  <p>Price: $0.20</p>
+                  <button
+                    class="order-btn"
+                    onclick="openOrderPage('Shredded cabbage', 0.20)"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- trang để đặt hàng -->
+      <div id="order-page" class="order-page">
+        <div class="order-container">
+          <h2 id="order-title"></h2>
+          <p>Price per item: $<span id="order-price"></span></p>
+          <label for="quantity">Quantity:</label>
+          <input
+            type="number"
+            id="quantity"
+            value="1"
+            min="1"
+            onchange="updateTotalPrice()"
+          />
+          <p>Total amount: $<span id="total-price">0.00</span></p>
+          <button onclick="confirmOrder()">Order confirmation</button>
+          <button onclick="closeOrderPage()">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <section class="contact-info">
+        <p>Hotline: <a href="tel:+84123456789">+84 123456789</a></p>
+        <p>Email: <a href="mailto:dayofpho@gmail.com">dayofpho@gmail.com</a></p>
+        <p>Address: 800 Đ. Âu Cơ, Phú Trung, Tân Phú, Hồ Chí Minh, Việt Nam</p>
+      </section>
+      <section class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2847562534486!2d106.639803!3d10.7907182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ead68267769%3A0xc36f52f3d816f7d4!2s800%20%C4%90.%20%C3%82u%20C%C6%A1%2C%20T%C3%A2n%20Th%C3%A0nh%2C%20T%C3%A2n%20B%C3%ACnh%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam!5e0!3m2!1sen!2s!4v1699349302670!5m2!1sen!2s"
+          width="100%"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+      <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank" title="Facebook">
+          <img src="Anh/facebook.png" alt="Facebook Icon" />
+        </a>
+        <a href="https://www.twitter.com" target="_blank" title="Twitter">
+          <img src="Anh/twitter.png" alt="Twitter Icon" />
+        </a>
+        <a href="https://www.youtube.com" target="_blank" title="YouTube">
+          <img src="Anh/png-clipart-youtube.png " alt="YouTube Icon" />
+        </a>
+        <a href="https://www.messenger.com" target="_blank" title="Messenger">
+          <img src="Anh/messenger.png" alt="Messenger Icon" />
+        </a>
+      </div>
+    </footer>
+    
+  </body>
+</html>

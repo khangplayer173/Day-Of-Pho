@@ -1,3 +1,4 @@
+
 // Mở popup với thông tin món ăn và giá
 function openOrderPage(dishName, price) {
     document.getElementById("order-page").style.display = "flex";
@@ -26,7 +27,11 @@ function openOrderPage(dishName, price) {
     var dishName = document.getElementById("order-title").textContent;
     var price = document.getElementById("order-price").textContent;
     var totalPrice = document.getElementById("total-price").textContent;
-    alert(`You have booked ${quantity} part ${dishName} for the total price $${totalPrice}`);
+    Swal.fire({
+      title: 'Order Successful!',
+      text: `You have booked ${quantity} part of ${dishName} for the total price $${totalPrice}`,
+      icon: 'success'
+    });
     closeOrderPage();
   }
   
